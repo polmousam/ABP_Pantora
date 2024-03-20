@@ -1,0 +1,3 @@
+D:\OneDrive - Centre d'Estudis Monlau\ABP\F1 SIMULACION\x64\Debug\F1 SIMULACION.exe
+D:\Centre d'Estudis Monlau\Yeray Lasanta Recha - web\F1 SIMULACION C++\x64\Debug\F1 SIMULACION.exe
+C:\Users\ytpol\Centre d'Estudis Monlau\Yeray Lasanta Recha - web\F1 SIMULACION C++\x64\Debug\F1 SIMULACION.exe

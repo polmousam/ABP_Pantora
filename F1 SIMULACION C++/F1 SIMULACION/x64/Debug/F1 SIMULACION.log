@@ -1,0 +1,5 @@
+﻿  F1 SIMULACION.cpp
+D:\Centre d'Estudis Monlau\Yeray Lasanta Recha - web\F1 SIMULACION C++\F1 SIMULACION.cpp(22,19): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+D:\Centre d'Estudis Monlau\Yeray Lasanta Recha - web\F1 SIMULACION C++\F1 SIMULACION.cpp(30,17): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  LINK : no se encontró D:\Centre d'Estudis Monlau\Yeray Lasanta Recha - web\F1 SIMULACION C++\x64\Debug\F1 SIMULACION.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+  F1 SIMULACION.vcxproj -> D:\Centre d'Estudis Monlau\Yeray Lasanta Recha - web\F1 SIMULACION C++\x64\Debug\F1 SIMULACION.exe
