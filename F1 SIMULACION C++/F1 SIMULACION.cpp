@@ -63,7 +63,7 @@ void configurarOpciones(string nombre_piloto, int& neumaticos, int& carga_aerodi
 
 int main() {
     // Mensaje de bienvenida mostrado poco a poco
-    string mensaje_bienvenida = "Bienvenido al programa de simulacion de tiempos por vuelta en los circuitos de Formula 1\n";
+    string mensaje_bienvenida = "Bienvenido al programa de simulacion de tiempos por vuelta del equipo ASTON MARTIN ARAMCO FORMULA ONE TEAM \n";
     for (char c : mensaje_bienvenida) {
         cout << c << flush;
         this_thread::sleep_for(chrono::milliseconds(PAUSA_ENTRE_CARACTERES));
@@ -162,17 +162,17 @@ int main() {
         double tiempo_alonso = calcularTiempoPorVuelta(tiempo_base, factor_neumaticos[neumaticos_alonso],
             factor_meteorologico[condiciones_meteorologicas],
             factor_aerodinamica[carga_aerodinamica_alonso]);
-        tiempo_alonso += generarAjusteAleatorio(); // Agregar un pequeño ajuste aleatorio
+        tiempo_alonso += generarAjusteAleatorio(); // Agregar un pequeÃ±o ajuste aleatorio
         cout << "Tiempo: " << formatoTiempo(tiempo_alonso) << endl;
 
         cout << "Tiempos por vuelta para Lance Stroll:" << endl;
         double tiempo_stroll = calcularTiempoPorVuelta(tiempo_base, factor_neumaticos[neumaticos_stroll],
             factor_meteorologico[condiciones_meteorologicas],
             factor_aerodinamica[carga_aerodinamica_stroll]);
-        tiempo_stroll += generarAjusteAleatorio(); // Agregar un pequeño ajuste aleatorio
+        tiempo_stroll += generarAjusteAleatorio(); // Agregar un pequeÃ±o ajuste aleatorio
         cout << "Tiempo: " << formatoTiempo(tiempo_stroll) << endl;
 
-        // Preguntar al usuario si desea realizar otra simulación
+        // Preguntar al usuario si desea realizar otra simulaciÃ³n
         cout << "Desea realizar otra simulacion? (s/n): ";
         cin >> opcion;
         opcion = validarEntrada(opcion);
