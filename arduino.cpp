@@ -110,12 +110,13 @@ void loop() {
     delay(500); 
   }
 
-  // Encender el LED si el tiempo total es menor que 10 segundos
-  if (tiempoTotal < 10000 && contadorActivo) {
-    digitalWrite(ledPin, HIGH);
-  } else {
-    digitalWrite(ledPin, LOW);
-  }
+// Encender el LED si el tiempo total es menor que 50 segundos
+if (tiempoTotal < 50000 && contadorActivo) {
+  digitalWrite(ledPin, HIGH);
+} else {
+  digitalWrite(ledPin, LOW);
+}
+
 
   delay(100);
 }
