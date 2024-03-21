@@ -38,6 +38,7 @@ char validarEntrada(char opcion) {
     while (opcion != 's' && opcion != 'S' && opcion != 'n' && opcion != 'N') {
         cout << "Entrada no valida. Por favor, ingrese 's' para si o 'n' para no: ";
         cin >> opcion;
+        cout << " " << endl;
     }
     return opcion;
 }
@@ -50,6 +51,7 @@ void configurarOpciones(string nombre_piloto, int& neumaticos, int& carga_aerodi
     cout << "3. Duro" << endl;
     cout << "Opcion: ";
     cin >> neumaticos;
+    cout << " " << endl;
     neumaticos--; // Ajuste de indice
 
     cout << "Selecciona la carga aerodinamica para " << nombre_piloto << ":" << endl;
@@ -58,6 +60,7 @@ void configurarOpciones(string nombre_piloto, int& neumaticos, int& carga_aerodi
     cout << "3. Alta" << endl;
     cout << "Opcion: ";
     cin >> carga_aerodinamica;
+    cout << " " << endl;
     carga_aerodinamica--; // Ajuste de indice
 }
 
@@ -115,6 +118,7 @@ int main() {
         cout << "4. Circuito de Suzuka" << endl;
         cout << "Opcion: ";
         cin >> circuito;
+        cout << " " << endl;
 
         // Definir los tiempos base y factores de ajuste segun el circuito seleccionado
         double tiempo_base;
@@ -147,6 +151,7 @@ int main() {
         cout << "3. Lluvia ligera con viento" << endl;
         cout << "Opcion: ";
         cin >> condiciones_meteorologicas;
+        cout << " " << endl;
         condiciones_meteorologicas--; // Ajuste de indice
 
         // Configurar los neumaticos y carga aerodinamica para Fernando Alonso
@@ -162,20 +167,21 @@ int main() {
         double tiempo_alonso = calcularTiempoPorVuelta(tiempo_base, factor_neumaticos[neumaticos_alonso],
             factor_meteorologico[condiciones_meteorologicas],
             factor_aerodinamica[carga_aerodinamica_alonso]);
-        tiempo_alonso += generarAjusteAleatorio(); // Agregar un pequeño ajuste aleatorio
+        tiempo_alonso += generarAjusteAleatorio(); // Agregar un peque�o ajuste aleatorio
         cout << "Tiempo: " << formatoTiempo(tiempo_alonso) << endl;
 
         cout << "Tiempos por vuelta para Lance Stroll:" << endl;
         double tiempo_stroll = calcularTiempoPorVuelta(tiempo_base, factor_neumaticos[neumaticos_stroll],
             factor_meteorologico[condiciones_meteorologicas],
             factor_aerodinamica[carga_aerodinamica_stroll]);
-        tiempo_stroll += generarAjusteAleatorio(); // Agregar un pequeño ajuste aleatorio
+        tiempo_stroll += generarAjusteAleatorio(); // Agregar un peque�o ajuste aleatorio
         cout << "Tiempo: " << formatoTiempo(tiempo_stroll) << endl;
 
-        // Preguntar al usuario si desea realizar otra simulación
+        // Preguntar al usuario si desea realizar otra simulaci�n
         cout << "Desea realizar otra simulacion? (s/n): ";
         cin >> opcion;
         opcion = validarEntrada(opcion);
+        cout << " " << endl;
     } while (opcion == 's' || opcion == 'S');
 
     cout << "Gracias por utilizar nuestro simulador. Hasta luego!" << endl;
